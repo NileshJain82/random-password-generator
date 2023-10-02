@@ -26,7 +26,7 @@ function App() {
     passwordRef.current?.select();
     passwordRef.current?.setSelectionRange(0, 999);
     document.execCommand("copy");
-  }, []);
+  }, [password]);
 
   useEffect(() => {
     passGen();
